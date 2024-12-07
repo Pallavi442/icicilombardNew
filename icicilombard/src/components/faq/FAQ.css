@@ -1,0 +1,29 @@
+.faq-container{
+    padding: 0 60px;
+    background-color: #F5F5DC;
+
+}
+.faq-container input{
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.faq-main{
+
+display: flex;
+flex-wrap: wrap;
+}
+.faq-main-div h3:after{
+    content: '-';
+    float: right;
+    position: relative;
+    right: 20px;
+}
+
+.faq-main-div{
+border-top:1px solid #005F83 ;
+width: 50%;
+}

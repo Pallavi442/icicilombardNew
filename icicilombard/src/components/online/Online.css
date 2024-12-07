@@ -1,0 +1,29 @@
+.online-container{
+    padding: 20px 60px;
+    background-color:#007B83;
+}
+.online-container h2{
+    text-align: center;
+    color: #ffff;
+}
+.online-main-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.online-list-container{
+    border-left: 2px solid white;
+}
+.online-list-container ul{
+    list-style: none;
+    padding-left: 80px;
+}
+.online-list-container ul li{
+    color:white
+
+}
+
+.online-list-container ul li {
+    /* content:url('../../assests/arw.png'); */
+    list-style:url('../../assests/arw.png');
+    padding-left: 10px;
+}

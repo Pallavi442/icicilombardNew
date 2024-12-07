@@ -1,0 +1,27 @@
+.customer-container {
+    /* padding-left: 60px; */
+}
+.customer-container h3,
+.customer-container p{
+    text-align: left;
+        padding-left: 60px;
+}
+
+.customer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px
+}
+.customer-child{
+    width: 30%;
+    display: block;
+    text-align: center;
+}
+.customer-child img{
+    margin: 0 auto;
+}
+.customer-child h3,
+.customer-child p{
+    text-align: center;
+}

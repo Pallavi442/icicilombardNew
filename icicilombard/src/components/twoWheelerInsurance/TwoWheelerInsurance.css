@@ -1,0 +1,29 @@
+.two-wheeler-container {
+    padding: 20px 60px;
+    background-color: #027B831A;
+}
+
+.two-wheeler-container h2 {
+    text-align: center;
+}
+
+.two-wheeler-main {
+    display: flex;
+    gap: 20px
+}
+
+.two-wheeler-main-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5DC;
+    padding: 10px;
+
+}
+
+.two-wheeler-sub-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: #027B83;
+}

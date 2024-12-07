@@ -1,0 +1,38 @@
+.policy-container {
+    /* display: flex; */
+    padding: 0 60px;
+
+}
+
+/* .policy-container h3 {
+    padding-left: 60px;
+} */
+
+.policy-main {
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 48px;
+    
+
+}
+.policy-div{
+    /* display: flex */
+        padding: 20px;
+        width: 45%;
+        border: 1px solid transparent;
+        /* box-shadow: 2px 2px 2px 2px grey; */
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+
+.policy-div span{
+    display: inline-flex;
+    width: 30px;
+    background-color: #005F83;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    /* padding:2px 0; */
+    margin-right: 5px;
+}

@@ -1,0 +1,63 @@
+.top-container {
+    background-color: #007B83;
+    /* height: 40px; */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 35px;
+    padding: 10px 0px 10px 60px;
+
+}
+
+.top-container a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+nav {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left:60px;
+}
+
+.main-container {
+    width: 100%
+}
+
+.main-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+}
+.main-container ul li{
+    color:#027B83;
+
+}
+
+.main-container ul li a:after {
+    content:url('../assests/arrow.png');
+    margin-left: 10px;
+}
+.btn{
+    width: 70px;
+    height: 28px;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    background-color:#027B83;
+    color: white;
+}
+.btn:hover{
+    background-color:#25969e;
+}

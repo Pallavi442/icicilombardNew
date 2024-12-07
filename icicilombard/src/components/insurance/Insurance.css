@@ -1,0 +1,22 @@
+.insurance-container {
+    padding-left: 60px;
+    display: flex;
+}
+
+.insurance-main-container {
+    padding: 0 60px;
+}
+
+.insurance-main-div {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-content: stretch; */
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.insurance-sub-div h3{
+    color:rgba(2, 123, 131, 1);
+    font-size: 16px;
+
+}
