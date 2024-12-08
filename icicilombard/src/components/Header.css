@@ -1,6 +1,5 @@
 .top-container {
     background-color: #007B83;
-    /* height: 40px; */
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -8,7 +7,6 @@
     align-content: center;
     gap: 35px;
     padding: 10px 0px 10px 60px;
-
 }
 
 .top-container a {
@@ -18,18 +16,17 @@
     align-content: center;
     align-items: center;
     gap: 10px;
-
 }
 
 nav {
-    background-color: #ffff;
+    background-color: #fff;
     display: flex;
     align-items: center;
-    padding-left:60px;
+    padding-left: 60px;
 }
 
 .main-container {
-    width: 100%
+    width: 100%;
 }
 
 .main-container ul {
@@ -39,25 +36,69 @@ nav {
     align-items: center;
     list-style-type: none;
     justify-content: space-evenly;
-
 }
-.main-container ul li{
-    color:#027B83;
 
+.main-container ul li {
+    position: relative;
+    color: #027B83;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-container ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .main-container ul li a:after {
-    content:url('../assests/arrow.png');
+    content: url('../assests/arrow.png');
     margin-left: 10px;
 }
-.btn{
+
+.main-container ul li.active a:after {
+    content: url('../assests/arrow-up.png');
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li {
+    padding: 8px 15px;
+    color: #007B83;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.btn {
     width: 70px;
     height: 28px;
     border-radius: 9px;
     border: 1px solid transparent;
-    background-color:#027B83;
+    background-color: #027B83;
     color: white;
 }
-.btn:hover{
-    background-color:#25969e;
+
+.btn:hover {
+    background-color: #25969e;
+    cursor: pointer;
 }

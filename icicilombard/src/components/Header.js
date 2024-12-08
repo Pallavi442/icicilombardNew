@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
 import call from '../assests/call.png';
 import callBack from '../assests/callBack.png';
@@ -7,59 +7,65 @@ import logo from '../assests/logo-new.png';
 import hamburger from '../assests/quill_hamburger.png';
 
 function Header() {
+  const [dropdownMenu, setDropdownMenu] = useState(null);
+
+  const handleMouseHover = (menu) => {
+    setDropdownMenu(menu);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownMenu(null);
+  };
+
   return (
     <header>
-        <div className='top-container'>
+      <div className='top-container'>
         <a>
-           <img src={call}/>
-           1800 266
-          </a>
-          <a>
-           <img src={callBack}/>
-           Call Back
-          </a>
-          <a>
-            <img src={liveChaat}/>
-          </a>
+          <img src={call} alt="Call" />
+          1800 266
+        </a>
+        <a>
+          <img src={callBack} alt="Call Back" />
+          Call Back
+        </a>
+        <a>
+          <img src={liveChaat} alt="Live Chat" />
+        </a>
+      </div>
+      <nav>
+        <img src={logo}/>
+        <div className='main-container'>
+          <ul>
+            {['Car Insurance', 'Two Wheeler Insurance', 'Health Insurance', 'Travel Insurance', 'Other Insurance', 'Claims'].map((item, index) => (
+              <li
+                key={index}
+                onMouseEnter={() => handleMouseHover(index)}
+                onMouseLeave={handleMouseLeave}
+                className={dropdownMenu === index ? 'active' : ''}
+              >
+                <a>{item}</a>
+                {dropdownMenu === index && (
+                  <div className="dropdown">
+                    <ul>
+                      <li>Option 1</li>
+                      <li>Option 2</li>
+                      <li>Option 3</li>
+                    </ul>
+                  </div>
+                )}
+              </li>
+            ))}
+            <li>
+              <button className='btn'>Login</button>
+            </li>
+            <li>
+              <img src={hamburger} alt="Menu" />
+            </li>
+          </ul>
         </div>
-       <nav>
-             <img src={logo}/>
-             <div className='main-container'>
-                <ul>
-                    <li>
-                        <a>Car Insurance</a>
-                
-                    </li>
-                    <li>
-                        <a> Two Wheeler Insurance</a>
-                   
-                    </li>
-                    <li>
-                        <a>Health Insurance</a>
-             
-                    </li>
-                    <li>
-                        <a>Travel Insurance</a>
-                    </li>
-                    <li>
-                     <a>Other Insurance</a>   
-                    </li>
-                    <li>
-                     <a>Claims
-                    </a>   
-
-                    </li>
-                    <li>
-                        <button className='btn'>login</button>
-                    </li>
-                    <li>
-                        <img src={hamburger}/>
-                    </li>
-                </ul>
-             </div>
-       </nav>
+      </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
