@@ -1,12 +1,13 @@
 import React from 'react';
 import "./FAQ.css";
+import search from '../../assests/material-symbols-light_search.png'
 
 function FAQ() {
   return (
     <div className='faq-container'>
         <h3>FAQs</h3>
         <p>Get answers to common questions about two wheeler insurance policy</p>
-        <input type="text" placeholder='Search Here'/>
+        <input type="text" placeholder='Search Here'/><img className="searchImg" src={search}/>
         <div className='faq-main'>
             <div className='faq-main-div'>
                 <h3>What is two-wheeler insurance, and why is it necessary?</h3>

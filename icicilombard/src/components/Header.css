@@ -33,7 +33,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    /* align-items: center; */
     list-style-type: none;
     justify-content: space-evenly;
 }
@@ -101,4 +101,118 @@ nav {
 .btn:hover {
     background-color: #25969e;
     cursor: pointer;
+}
+
+
+/* Responsive for  1024 px*/
+@media only screen and (max-width: 1024px) {
+    .form-container input {
+        width: 41%;
+        border: 1px solid grey;
+        border-radius: 12px;
+        text-align: left;
+        padding: 10px 10px;
+    }
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 auto;
+    /* margin: 0 auto; */
+    /* position: absolute; */
+    left: 222px;
+}
+
+/* Responsive for  1024 px*/
+@media only screen and (max-width:768px) {
+
+    /* nav {
+        background-color: #fff;
+        display: none;
+        align-items: center;
+        padding-left: 60px;
+    } */
+    nav {
+        background-color: #fff;
+        display: flex;
+        padding-left: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-container {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main-container.menu-active {
+        display: flex;
+        background-color: #ffff;
+        position: absolute;
+        top: 87px;
+        right: 0px;
+        width: 32%;
+        padding: 9px;
+    }
+
+    .main-container.menu-active ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: left !important
+    }
+
+    .main-container.menu-active ul li {
+        color: #007B83;
+        text-align: left;
+    }
+    .main-container.menu-active ul li a {
+        /* color: #007B83; */
+        text-align: left;
+    }
+
+
+    .dropdown {
+        position: relative !important;
+        top:0px;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        padding: 10px;
+        z-index: 10;
+    }
+
+
+}
+
+/* Responsive for  375 px*/
+@media only screen and (max-width:580px) {
+    .top-container {
+        background-color: #007B83;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 8px;
+        padding: 7px 0px 10px 38px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .top-container {
+        background-color: #007B83;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 8px;
+        padding: 10px 0px 10px 38px;
+    }
 }

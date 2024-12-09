@@ -1,28 +1,43 @@
-.buy-container{
+.buy-container {
     padding: 20px 60px;
 }
-.buy-main{
+
+.buy-main {
     display: flex;
     flex-wrap: wrap;
-    gap:10px
+    gap: 10px
 }
-.buy-main-div{
+
+.buy-main-div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 49%;
 
 }
+.buy-main-div img{
+    padding-top: 10px;
+}
+
 .buy-sub-div h3,
-.buy-sub-div p{
+.buy-sub-div p {
     margin: 0px;
     padding: 0px;
 }
 
-.buy-sub-div{
+.buy-sub-div {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
-.buy-sub-div h4{
+
+.buy-sub-div h4 {
     color: #027B83;
+}
+
+@media only screen and (max-width:580px) {     
+.buy-main-div {
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+}
 }

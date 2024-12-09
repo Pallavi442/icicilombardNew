@@ -27,3 +27,44 @@ flex-wrap: wrap;
 border-top:1px solid #005F83 ;
 width: 50%;
 }
+
+.searchImg{
+    position: relative;
+    top: 12px;
+    width: 2%;
+    right: 33px;
+}
+
+/* Responsive for  768 px*/
+@media only screen and (max-width: 768px) {  
+    .faq-main-div {
+        border-top: 1px solid #005F83;
+        width: 100%;
+    }
+    .searchImg{
+        position: relative;
+        top: 12px;
+        width:5%;
+        right: 33px;
+    }
+  }
+  @media only screen and (max-width: 678px) {  
+    .searchImg{
+        position: relative;
+        top: 12px;
+        width:8%;
+        right: 33px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 360px) {  
+    .searchImg{
+        position: relative;
+        top: 12px;
+        width: 11%;
+        right: 33px;
+    }
+  }
+

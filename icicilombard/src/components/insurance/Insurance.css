@@ -10,13 +10,33 @@
 .insurance-main-div {
     display: flex;
     /* flex-wrap: wrap; */
-    /* align-content: stretch; */
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
-.insurance-sub-div h3{
-    color:rgba(2, 123, 131, 1);
+
+.insurance-sub-div h3 {
+    color: rgba(2, 123, 131, 1);
     font-size: 16px;
 
+}
+
+/* Responsive for  768 px*/
+@media only screen and (max-width:768px) {
+    .insurance-container {
+        padding-left: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width:580px) {
+    .img-container img {
+        width: 100%
+    }
+
+    .insurance-main-container {
+        padding: 0 4px;
+    }
 }

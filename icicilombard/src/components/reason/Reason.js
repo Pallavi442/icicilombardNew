@@ -13,7 +13,7 @@ function Reason() {
         <div className='reason-container'>
             <div className='reason-main'>
                 <div className='img-container'>
-                    <img src={bike_img}/>
+                    <img className="reason-img" src={bike_img}/>
                 </div>
                 <div className='reason-main1'><h3>Reason to buy bike insurance Online</h3>
                 <div className='reason-main-div'>

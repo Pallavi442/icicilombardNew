@@ -25,3 +25,21 @@
 .customer-child p{
     text-align: center;
 }
+
+/* Responsive for  580 px*/
+@media only screen and (max-width:768px) {     
+    .customer-child {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+      }
+
+@media only screen and (max-width:580px) {     
+.customer-child {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+  }
+

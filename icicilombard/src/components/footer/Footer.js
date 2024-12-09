@@ -32,7 +32,13 @@ function Footer() {
         </p>
         <div className="footer-links">
           <h4>QuickLinks</h4>
-          <p>Home &gt;&gt; Car Insurance | TwoWheeler Insurance | Health Insurance | Travel Insurance | Other Insurance | Claims</p>
+          <a>Home &gt;&gt; Car Insurance | </a>
+          <a>TwoWheeler Insurance | </a>
+          <a>Health Insurance | </a>
+          <a>Travel Insurance | </a>
+          <a>Other Insurance | </a>
+          <a>Claims</a>
+          {/* <p>Home &gt;&gt; Car Insurance | TwoWheeler Insurance | Health Insurance | Travel Insurance | Other Insurance | Claims</p> */}
         </div>
       </div>
     </footer>

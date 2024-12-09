@@ -12,7 +12,7 @@ function Review() {
         <h2>See What Our Customers Say</h2>
       </div>
       <div className="review-wrapper">
-        <img src={arrowLeft} className="arrow-left" alt="Previous" />
+        <img src={arrowLeft} className="arrow-left" alt="arrow-left" />
 
         <div className="review-box">
           <div className="review-content">

@@ -27,3 +27,35 @@
     gap: 20px;
     color: #027B83;
 }
+
+/* Responsive for  768 px*/
+@media only screen and (max-width:768px) {
+    /* .two-wheeler-container {
+        padding: 20px 10px;
+        background-color: #027B831A;
+    }
+    .two-wheeler-main {
+        display: flex;
+        gap: 6px;
+    }    */
+    .two-wheeler-main {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* Responsive for  580 px*/
+@media only screen and (max-width:580px) {
+    .two-wheeler-main img{
+        width: auto;
+    }
+}
+/* Responsive for  414 px*/
+@media only screen and (max-width:414px) {
+    .two-wheeler-main img{
+        width: quto
+    }
+}
+
