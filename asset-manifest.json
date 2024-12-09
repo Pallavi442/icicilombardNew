@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/icicilombardNew/static/css/main.5a5d4db3.css",
+    "main.js": "/icicilombardNew/static/js/main.effe6360.js",
+    "static/js/453.e79745b6.chunk.js": "/icicilombardNew/static/js/453.e79745b6.chunk.js",
+    "static/media/man_with_bike.png": "/icicilombardNew/static/media/man_with_bike.11e9378651dc5443033e.png",
+    "static/media/image.png": "/icicilombardNew/static/media/image.af1ff9f1dcecc0ca76ca.png",
+    "static/media/two_wheeeler_img.png": "/icicilombardNew/static/media/two_wheeeler_img.81cfcba21fd4bc6ecb11.png",
+    "static/media/two wheeler illustrate.png": "/icicilombardNew/static/media/two wheeler illustrate.29a839f7bd4a3c90249d.png",
+    "static/media/manImg.png": "/icicilombardNew/static/media/manImg.eb9b607cb2325775c7fc.png",
+    "static/media/logo.svg": "/icicilombardNew/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/icicilombardNew/index.html",
+    "main.5a5d4db3.css.map": "/icicilombardNew/static/css/main.5a5d4db3.css.map",
+    "main.effe6360.js.map": "/icicilombardNew/static/js/main.effe6360.js.map",
+    "453.e79745b6.chunk.js.map": "/icicilombardNew/static/js/453.e79745b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a5d4db3.css",
+    "static/js/main.effe6360.js"
+  ]
+}
