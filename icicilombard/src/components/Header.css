@@ -124,7 +124,8 @@ nav {
     /* position: absolute; */
     left: 222px;
 }
-.closeIcon{
+
+.closeIcon {
     position: absolute;
     /* left: 180px; */
     display: none;
@@ -160,56 +161,62 @@ nav {
     }
 
     .main-container.menu-active {
+        background-color: #fff;
         display: flex;
-        background-color: #ffff;
+        height:90vh;
+        padding: 36px 0px;
         position: fixed;
-        top: 0px;
-        right: 0px;
-        width: 32%;
-        height: 100vh;
-        padding: 9px;
+        right: 0;
+        top: 0;
+        width: 60%;
         z-index: 1;
-    }
-
-    .main-container.menu-active ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: left !important
-    }
-
-    .main-container.menu-active ul li {
-        color: #007B83;
-        text-align: left;
-    }
-
-    .main-container.menu-active ul li a {
-        /* color: #007B83; */
-        text-align: left;
+        box-shadow: 2px 2px 13px 2px grey;
+        overflow-y: scroll;
     }
 
 
-    .dropdown {
-        position: relative !important;
-        top: 0px;
-        left: 0;
-        background: #fff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ddd;
-        padding: 10px;
-        z-index: 10;
-    }
-    .closeIcon{
-        display: block;
-    }
+.main-container.menu-active ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: left !important;
+    padding-left: 20px;
+}
+
+.main-container.menu-active ul li {
+    color: #007B83;
+    text-align: left;
+}
+
+.main-container.menu-active ul li a {
+    /* color: #007B83; */
+    text-align: left;
+}
+
+
+.dropdown {
+    position: relative !important;
+    top: 0px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 10;
+}
+
+.closeIcon {
+    display: block;
+}
 
 
 }
 
 /* Responsive for  375 px*/
 @media only screen and (max-width:580px) {
-    .closeIcon{
+    .closeIcon {
         display: block;
     }
+
     .top-container {
         background-color: #007B83;
         color: white;
@@ -223,9 +230,10 @@ nav {
 }
 
 @media only screen and (max-width:414px) {
-    .closeIcon{
+    .closeIcon {
         display: block;
     }
+
     .top-container {
         background-color: #007B83;
         color: white;
