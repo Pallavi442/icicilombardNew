@@ -124,6 +124,15 @@ nav {
     /* position: absolute; */
     left: 222px;
 }
+.closeIcon{
+    position: absolute;
+    /* left: 180px; */
+    display: none;
+    font-size: 21px;
+    right: 16px;
+    color: #007B83;
+}
+
 
 /* Responsive for  1024 px*/
 @media only screen and (max-width:768px) {
@@ -153,11 +162,13 @@ nav {
     .main-container.menu-active {
         display: flex;
         background-color: #ffff;
-        position: absolute;
-        top: 87px;
+        position: fixed;
+        top: 0px;
         right: 0px;
         width: 32%;
+        height: 100vh;
         padding: 9px;
+        z-index: 1;
     }
 
     .main-container.menu-active ul {
@@ -170,6 +181,7 @@ nav {
         color: #007B83;
         text-align: left;
     }
+
     .main-container.menu-active ul li a {
         /* color: #007B83; */
         text-align: left;
@@ -178,7 +190,7 @@ nav {
 
     .dropdown {
         position: relative !important;
-        top:0px;
+        top: 0px;
         left: 0;
         background: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -186,12 +198,18 @@ nav {
         padding: 10px;
         z-index: 10;
     }
+    .closeIcon{
+        display: block;
+    }
 
 
 }
 
 /* Responsive for  375 px*/
 @media only screen and (max-width:580px) {
+    .closeIcon{
+        display: block;
+    }
     .top-container {
         background-color: #007B83;
         color: white;
@@ -205,6 +223,9 @@ nav {
 }
 
 @media only screen and (max-width:414px) {
+    .closeIcon{
+        display: block;
+    }
     .top-container {
         background-color: #007B83;
         color: white;

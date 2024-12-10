@@ -5,6 +5,7 @@ import callBack from '../assests/callBack.png';
 import liveChaat from '../assests/liveChaat.png';
 import logo from '../assests/logo-new.png';
 import hamburger from '../assests/quill_hamburger.png';
+import { RxCross1 } from "react-icons/rx";
 
 function Header() {
   const [dropdownMenu, setDropdownMenu] = useState(null);
@@ -17,6 +18,10 @@ function Header() {
   const handleMouseLeave = () => {
     setDropdownMenu(null);
   };
+
+  const handleClose=()=>{
+    setNavOpen(null)
+  }
   
   const toggleNav = () => {
     setNavOpen(!navOpen); 
@@ -43,6 +48,9 @@ function Header() {
         <img src={hamburger}/>
         </div>
         <div className={`main-container ${navOpen ?'menu-active' : ''}`}>
+        <div className='closeicondiv'>
+          <RxCross1 onClick={handleClose} className='closeIcon'/>
+          </div>
           <ul>
             {['Car Insurance', 'Two Wheeler Insurance', 'Health Insurance', 'Travel Insurance', 'Other Insurance', 'Claims'].map((item, index) => (
               <li
